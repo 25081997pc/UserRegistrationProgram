@@ -7,17 +7,17 @@
         {
             Console.WriteLine("Welcome to the User Registration Program");
             UserRegister userRegister = new UserRegister();
-            //Validating Email
-            Console.WriteLine("Enter the Email: ");
-            string email = Console.ReadLine();
+            //Validating PhoneNumber
+            Console.WriteLine("Enter the Phone number: ");
+            string phone = Console.ReadLine();
 
-            if (userRegister.validateEmail(email))
+            if (userRegister.validatePhoneNum(phone))
             {
-                Console.WriteLine("Email is valid");
+                Console.WriteLine("PhoneNumber is valid");
             }
             else
             {
-                Console.WriteLine("Email is not valid");
+                Console.WriteLine("PhoneNumber is not valid");
             }
         }
     }
