@@ -12,7 +12,8 @@ namespace UserRegistration_Program
         //Regex Patterns 
         public string regex_FirstName = "^[A-Z][a-z]{2,}$";
         public string regex_LastName = "^[A-Z][a-z]{2,}$";
-        public string regex_Email = "^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*[@][a-zA-Z0-9]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2,})?$";
+        public string regex_Email = "^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*[@][a-zA-Z0-9]{2,}[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,})?$";
+        public string regex_PhoneNumber = "^[+]?[9][1][' ']?[0-9]{10}$";
         //Method to check the First Name
         public bool validateFirstName(string firstname)
         {
@@ -27,6 +28,11 @@ namespace UserRegistration_Program
         public bool validateEmail(string email)
         {
             return Regex.IsMatch(email, regex_Email);
+        }
+        //Method to check the PhoneNumber
+        public bool validatePhoneNum(string phonenum)
+        {
+            return Regex.IsMatch(phonenum, regex_PhoneNumber);
         }
     }
 }
