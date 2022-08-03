@@ -14,6 +14,7 @@ namespace UserRegistration_Program
         public string regex_LastName = "^[A-Z][a-z]{2,}$";
         public string regex_Email = "^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*[@][a-zA-Z0-9]{2,}[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,})?$";
         public string regex_PhoneNumber = "^[+]?[9][1][' ']?[0-9]{10}$";
+        public string regex_Password = "^[a-zA-Z]{8,}$";
         //Method to check the First Name
         public bool validateFirstName(string firstname)
         {
@@ -33,6 +34,11 @@ namespace UserRegistration_Program
         public bool validatePhoneNum(string phonenum)
         {
             return Regex.IsMatch(phonenum, regex_PhoneNumber);
+        }
+        //Method to check the Password
+        public bool validatePassword(string password)
+        {
+            return Regex.IsMatch(password, regex_Password);
         }
     }
 }
