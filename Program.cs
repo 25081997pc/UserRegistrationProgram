@@ -7,17 +7,17 @@
         {
             Console.WriteLine("Welcome to the User Registration Program");
             UserRegister userRegister = new UserRegister();
-            //Validating Last Name
-            Console.WriteLine("Enter the Last Name: ");
-            string lastname = Console.ReadLine();
+            //Validating Email
+            Console.WriteLine("Enter the Email: ");
+            string email = Console.ReadLine();
 
-            if (userRegister.validateLastName(lastname))
+            if (userRegister.validateEmail(email))
             {
-                Console.WriteLine("LastName is valid");
+                Console.WriteLine("Email is valid");
             }
             else
             {
-                Console.WriteLine("LastName is not valid");
+                Console.WriteLine("Email is not valid");
             }
         }
     }
