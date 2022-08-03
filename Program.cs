@@ -7,7 +7,8 @@
         {
             Console.WriteLine("Welcome to the User Registration Program");
             UserRegister userRegister = new UserRegister();
-            //Validating Password
+
+            //Validating Password 
             Console.WriteLine("Enter the Password: ");
             string password = Console.ReadLine();
 
