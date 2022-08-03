@@ -8,16 +8,16 @@
             Console.WriteLine("Welcome to the User Registration Program");
             UserRegister userRegister = new UserRegister();
             //Validating PhoneNumber
-            Console.WriteLine("Enter the Phone number: ");
-            string phone = Console.ReadLine();
+            Console.WriteLine("Enter the Password: ");
+            string password = Console.ReadLine();
 
-            if (userRegister.validatePhoneNum(phone))
+            if (userRegister.validatePassword(password))
             {
-                Console.WriteLine("PhoneNumber is valid");
+                Console.WriteLine("Password is valid");
             }
             else
             {
-                Console.WriteLine("PhoneNumber is not valid");
+                Console.WriteLine("Password is not valid");
             }
         }
     }
